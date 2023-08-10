@@ -143,7 +143,7 @@ html {
 
   /* to under highlight the word use the pseudo selector, put the relative position on the parent - li*/
   #navbar li a.active::after,
-  #navbar li a:hover::after /*Now, I have in all links the bottom bar*/ { 
+  #navbar li a:hover::after /*Now, I have it in all links, the bottom bar*/ { 
     content: "";
     width: 30%;
     height: 2px;
@@ -153,7 +153,10 @@ html {
     left: 20px;
   }
 
-
+  #mobile {
+    display: none;
+    align-items: center;
+  }
 
   /*Home page*/
 
@@ -504,7 +507,7 @@ html {
     border-bottom-left-radius: 0;
   }
 
-  /* footer {
+  footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -529,14 +532,114 @@ html {
   footer p {
     font-size: 13px;
     margin: 0 0 8px 0;
-  } */
+  } 
 
-  /* footer a {
+   footer a {
     font-size: 13px;
     text-decoration: none;
     color: #222;
     margin-bottom: 10px;
-  } */
-;;;;;;;;;;;;;
+  } 
 
-/* PAREI EM 1:44:04 */
+
+  footer .follow {
+    margin-top: 20px;
+  }
+
+  footer .footer-icon {
+    color: #465b52;
+    padding-right: 4px;
+    cursor: pointer;
+  }
+
+  footer .install .row img {
+    border: 1px solid #088178;
+    border-radius: 6px;
+  }
+
+  footer .install img {
+    margin: 10px 0 15px 0;
+  }
+
+  footer .follow .footer-icon:hover,
+  footer a:hover {
+    color: #088178;
+  }
+
+  footer .copyright {
+    width: 100%;
+    text-align: center;
+  }
+
+
+/* Start Media Query */
+
+@media (max-width:799px) {
+
+  #navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    height: 100vh;
+    width: 300px;
+    background-color: #e3e6f3;
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+    padding: 80px 0px 0px 10px;
+    transition: 0.3s;
+
+    z-index: 100;
+  }
+
+  #navbar li {
+    margin-bottom: 25px;
+  }
+
+  #navbar.active {
+    right: 0;
+  }
+
+  #mobile {
+    display: flex;
+    align-items: center;
+  }
+
+  #mobile ion-icon {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+
+  #mobile a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+  }
+
+  #mobillle a:hover, 
+  #mobile  a.active {
+    color: #088178;
+  }
+
+  #mobile .menu-icon {
+    color: #1a1a1a;
+    font-size: 24px;
+    padding-left: 20px;
+  }
+
+  #close {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    color: #222;
+    font-size: 26px;
+  }
+
+}
+
+
+/* estoy en 2:05:40 */
