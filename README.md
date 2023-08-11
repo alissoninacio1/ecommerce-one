@@ -1,2 +1,2 @@
 # ecommerce-one
-A basic ecommerce built with HTML, CSS, Javascript
+A basic ecommerce style built with HTML, CSS, Javascript
