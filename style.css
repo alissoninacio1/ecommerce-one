@@ -141,6 +141,10 @@ html {
     }
   }
 
+  #close {
+    display: none;
+  }
+
   /* to under highlight the word use the pseudo selector, put the relative position on the parent - li*/
   #navbar li a.active::after,
   #navbar li a:hover::after /*Now, I have it in all links, the bottom bar*/ { 
@@ -197,7 +201,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 
   }
 
@@ -576,6 +580,10 @@ html {
 
 @media (max-width:799px) {
 
+  .section-p1 {
+    padding: 40px 40px;
+  }
+
   #navbar {
     display: flex;
     flex-direction: column;
@@ -632,6 +640,7 @@ html {
   }
 
   #close {
+    display: initial;
     position: absolute;
     top: 30px;
     left: 30px;
@@ -639,7 +648,56 @@ html {
     font-size: 26px;
   }
 
+  #lg-bag {
+    display: none;
+  }
+
+  #hero {    
+    height: 70vh;
+    padding: 0 80px;
+    background-position: top 30% right 30%;
+  }
+
+  #feature {
+    justify-content: center;
+  }
+
+  #feature .fe-box {
+    margin: 15px 15px;
+  }
+
+  #product .pro-container {
+    justify-content: center;
+  }
+
+  #product .pro {
+    margin: 15px;
+  }
+
+  #banner {
+    height: 20vh;
+  }
+
+  #sm-banner .banner-box {
+    min-width: 100%;
+    height: 30vh;
+  }
+
+  #banner3 {
+    padding: 0px 40px;
+  }
+
+  #banner3 .banner-box {
+    width: 28%;
+  }
+
+  #newsletter .form {
+    width: 70%;
+  }
+
+  
+
 }
 
 
-/* estoy en 2:05:40 */
+/* estoy en 2:14:20 */
